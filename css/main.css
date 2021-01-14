@@ -57,10 +57,6 @@ header {
   color: #FABE4C;
 }
 
-
-
-
-
 /* -------------------------
 3. Banner CSS 
 ------------------------- */
@@ -90,6 +86,7 @@ header {
 .banner-content h1 {
   font-size: 80px;
   color: #363958;
+  text-transform: uppercase;
 }
 
 .banner-content h1 span {
@@ -107,12 +104,14 @@ header {
 .button {
   display: inline-block;
   outline: none;
+  border: none;
   padding: 18px 33px;
   background: linear-gradient(to bottom, #A4BC46, #85A019);
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -127,4 +126,211 @@ header {
 
 .banner-img img {
   max-width: 90%;
+}
+
+/* -------------------------
+4. Product CSS
+------------------------- */
+.product {
+  padding: 50px 0 20px;
+}
+
+.section-title {
+  color: #363958;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.product-card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 30px);
+}
+
+.product-img {
+  background: #F1F1F1;
+  border-radius: 20px;
+  padding: 20px;
+  height: 290px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.product-img img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.7s;
+}
+
+.product-card:hover .product-img img {
+  transform: scale(1.1);
+}
+
+.product-details h4,
+.feature-desc h4 {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #363958;
+  text-transform: capitalize;
+}
+
+.product-details h4:hover {
+  color: #FABE4C;
+}
+
+.product-details p,
+.feature-desc p {
+  color: #3E3E3E;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.product-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-pricing span {
+  font-size: 36px;
+  color: #FABE4C;
+  font-weight: 900;
+}
+
+/* -------------------------
+5. Feature CSS
+------------------------- */
+.feature {
+  padding: 80px 0 120px;
+  overflow-x: hidden;
+}
+
+.feature-item {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 27px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.feature-icon {
+  text-align: center;
+  width: 78px;
+  margin-right: 36px;
+}
+
+.feature-icon img {
+  max-width: 78px;
+  max-height: 82px;
+}
+
+.feature-desc p {
+  margin-bottom: 0;
+}
+
+.feature-img img {
+  max-width: 100%;
+}
+
+/* -------------------------
+6. Newsletter CSS
+------------------------- */
+.newsletter {
+  background-color: #fff5da;
+  padding: 50px 0;
+}
+
+.newsletter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter-desc h2 {
+  font-size: 48px;
+  color: #363958;
+}
+
+.newsletter-desc p {
+  font-size: 18px;
+  color: #363958;
+}
+
+.newsletter-form {
+  display: inline-flex;
+}
+
+.newsletter-form input {
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 15px 0 0 15px;
+  padding: 15px;
+  width: 250px;
+  color: #363958;
+}
+
+.newsletter-form input:focus {
+  border: 1px solid #85A019;
+}
+
+.subs-btn {
+  border-radius: 0 15px 15px 0;
+}
+
+/* -------------------------
+6. Footer CSS
+------------------------- */
+footer {
+  background: #363958;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.social-info {
+  display: inline-flex;
+}
+
+.social-info span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  margin: 0 7px;
+  font-size: 13px;
+}
+
+.social-info span:hover {
+  background: #ffffff;
+  color: #363958;
+}
+
+.social-info span:last-child {
+  margin-right: 0;
+}
+
+.social-info span a {
+  display: block;
 }
